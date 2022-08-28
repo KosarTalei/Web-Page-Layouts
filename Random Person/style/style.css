@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #454545;
+  background-color: #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .875em;/*dont use px! -> px/16*/
+  text-align: left;
+  font-weight: bold;
+}
+div{
+  display: block;
+}
+
+/* JUST for this exercise - remove all <p> margins */
+p {
+  margin: 0;
+}
+
+/* Centre horizontally & vertically --> utility class!*/
+.full-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span{
+  color: #950100;
+}
+
+.site-wrapper { /*250*700*/
+  max-width: 1060px;
+  min-height: 1000px;
+  margin: 20px auto;
+}
+
+.site-footer {
+  color: #666666;
+}
+.site-footer span{
+  color: #950100;
+}
+
+.site-header{
+  color: #a8a8a8;
+}
+
+.example span{
+  color: #950100;
+}
+.help span{
+  color: #950100;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+}
+.img-container{
+padding: 20px;
+}
+.examples ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.examples ul li{
+  justify-content: space-evenly;
+}
