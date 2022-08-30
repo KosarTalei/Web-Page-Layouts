@@ -27,6 +27,30 @@ p {
 }
 .span{
   color: #950100;
+  margin: 5px;
+}
+
+.span-line:before{
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+    margin: 5px;
+    overflow: hidden;
+}
+.span-line::after{
+  margin: 10px;
+  overflow: hidden;
+}
+
+.hr {
+  width: 50%;
+  height: 5px;
+  margin: auto;
+  background-color:#666;
+  border: 0 none;
+
+  justify-content: center;
+  
+  text-align: center;
 }
 
 .site-wrapper { /*250*700*/
@@ -53,18 +77,34 @@ p {
   color: #950100;
 }
 
-.about-container{
+.about{
   display: flex;
   flex-direction: row;
 }
-.img-container{
-padding: 20px;
+.about__img{
+padding: 10px;
 }
-.examples ul{
+
+.example__items ul{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
+  text-align: center;
 }
-.examples ul li{
+.example__items ul li{/*290*250*/
+  background-color: hsl(0,0%,100%);
+  max-width: 290px;
+  min-height: 250px;
+  list-style-type: none;
+  /*justify-content: space-evenly;*/
+}
+.example__items__img{
   justify-content: space-evenly;
+  text-align: center;
+  margin: 10px; /*browser adds default margin for browser, and img will be moved!*/
 }
+.example__items__img figcaption{
+  margin: 10px;
+}
+
