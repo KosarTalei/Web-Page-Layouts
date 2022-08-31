@@ -19,11 +19,6 @@ body {
   font-weight: bold;
 }
 
-/* JUST for this exercise - remove all <p> margins */
-p {
-  margin: 0;
-}
-
 /* Centre horizontally & vertically --> utility class!*/
 .full-centre {
   display: flex;
