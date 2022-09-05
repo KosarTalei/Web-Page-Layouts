@@ -21,6 +21,9 @@ body {
 h2{
   color: #333;
 }
+h3{
+  font-weight: lighter;
+}
 
 /* Centre horizontally & vertically --> utility class!*/
 .full-centre {
@@ -221,6 +224,7 @@ h2{
   min-height: 100%;
   height: auto;
   width: auto;
+  padding: 10px;
 }
 .container {
   flex-basis: 170px;/*problem: handle items in line*/
@@ -239,22 +243,8 @@ h2{
   max-width: 100;
   padding: 10px;
 }
-.name{
-  justify-content: right;
-  align-items: right;
-  padding-top: 10px;
-  color: #333333;
+
+.caption{
   font-weight: lighter;
-  font-size: .7em;
-  background-color: #cccccc;
-}
-.caption{/*150*100*/
-  min-height: 100px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  font-weight: lighter;
-  font-size: .7em;
-  background-color: #cccccc;
   color: #767676;
 }
