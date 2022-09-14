@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./styles/normalize.min.css">
+  <link rel="stylesheet" href="./styles/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="logo-container">
+        <a class="logo" href="index.html">
+          <h1 class="sr-only">Company Name</h1>
+          <!-- <h1 aria-label="Company Name">
+            <img aria-hidden="true" src="./images/company-logo.png" width="219" height="107" alt="Company Name logo">
+          </h1> -->
+        </a>
+      </div>
+      <section class="contact-details">
+        <address>
+          <input type="checkbox" id="contact-details-toggle" class="contact-details__toggle">
+          <label for="contact-details-toggle" class="contact-details__toggle-label" aria-label="Show/hide contact details">
+            <span class="sr-only">Contact details</span>
+          </label>
+          <ul class="contact-details__content">
+            <li class="phone"><a href="tel:+61299887766">02 9988 7766</a></li>
+            <li class="email"><a href="mailto:info@company.com">info@company.com</a></li>
+            <li class="website"><a href="https://www.company.com">www.company.com</a></li>
+          </ul>
+        </address>
+      </section>
+    </header>
+    <aside class="sidebar">
+      <nav class="main-nav">
+        <h2 class="main-nav__heading">Navigation</h2>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#" class="main-nav__link">Home</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__link">About Us</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__link">Gallery</a></li>
+          <li class="main-nav__list-item"><a href="#" class="main-nav__link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Newsletter</h2>
+        <p>Enter your email address to get <del>spam</del> our newsletter!</p>
+      </section>
+    </aside>
+    <div class="content">
+      <main>
+
+        <h2>
+          Gallery
+          <span class="heading-caption">(using <code>div</code> and <code>article</code>)</span>
+        </h2>
+
+        <div class="gallery">
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="https://placekitten.com/g/300/120" class="person__photo" width="300" height="120" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="https://placekitten.com/g/120/300" class="person__photo" width="120" height="300" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+          <article class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </article>
+        </div>
+
+        <h2>
+          Gallery
+          <span class="heading-caption">(using <code>ul</code> and <code>li</code>)</span>
+        </h2>
+
+        <ul class="gallery">
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="https://placekitten.com/g/300/120" class="person__photo" width="300" height="120" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="https://placekitten.com/g/120/300" class="person__photo" width="120" height="300" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+          <li class="gallery__item person">
+            <div class="person__photo-frame">
+              <img src="./images/person.png" class="person__photo" width="110" height="118" alt="Photo of Person Name">
+            </div>
+            <h3 class="person__name">Person Name</h3>
+            <p class="person__description">Information about the person goes here that explains the image above.</p>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <p><small>Copyright &copy;2022 Company Name</small></p>
+    </footer>
+  </div>
+</body>
+</html>
