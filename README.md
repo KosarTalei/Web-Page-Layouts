@@ -3,11 +3,6 @@ Implement different layouts
 
 # Working on following topics:
 
-# Web Page Layouts
-Implement different layouts
-
-# Working on following topics:
-
 <ul>
 <li>
 
